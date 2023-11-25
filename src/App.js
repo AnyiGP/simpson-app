@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     //first, consulta a la api
     const fetchData = async () => {
-      const res = await fetch(`https://apisimpsons.fly.dev/api/personajes?limit=3&page=${count}`);
+      const res = await fetch(`https://apisimpsons.fly.dev/api/personajes?limit=10&page=${count}`);
       const data = await res.json();
       //console.log(data)
       setcharacter(data.docs);
