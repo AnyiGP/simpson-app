@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { CardCharacter } from "./components/CardCharacter";
+import { CardCharacter } from "../components/CardCharacter";
 
 function App() {
   const [character, setcharacter] = useState([]);
@@ -21,6 +21,8 @@ function App() {
 
     fetchData();
   }, [count]); //third
+
+  console.log(character);
 
   //console.log(character);
 
